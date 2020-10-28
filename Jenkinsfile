@@ -1,8 +1,8 @@
 pipeline {
     agent any
     tools {
-        maven: 'maven'
-        jdk: 'openjdk-15'
+        maven 'maven'
+        jdk 'openjdk-15'
     }
     parameters {
         booleanParam(name: "Perform release ?", description: '', defaultValue: false)
